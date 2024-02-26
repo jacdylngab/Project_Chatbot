@@ -1,0 +1,160 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - how are you
+    - hello there
+    - good morning
+    - good evening
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: thanks
+  examples: |
+    - thanks
+    - thank you
+    - appreciate it 
+    - gracias
+    - merci
+    - urakoze 
+    - many thanks
+
+- intent: options
+  examples: |
+    - what can you do?
+    - options
+    - help
+    - help please
+    - how can you help me 
+    - what are your capabilities
+
+- intent: tracks
+  examples: |
+    - what are the Computer Science tracks available at Buena Vista University
+    - what are the Computer Science tracks available at BVU
+    - what are the CS tracks available at Buena Vista University 
+    - what are the CS tracks availabel at BVU
+    - tracks
+    - tracks available at Buena Vista University
+    - tracks available at BVU
+    - Computer Science tracks at Buena Vista University
+    - Computer Science tracks at BVU
+    - CS tracks at Buena Vista University
+    - CS tracks at BVU
+    - BVU CS tracks
+    - Buena Vista University Computer Science tracks
+    - BVU CS tracks
+    - how many CS tracks does BVU have?
+    - how many Computer Science tracks does Buena Vista University have?
+
+- intent: AI/Robotics
+  examples: |
+    - what is the Computer Science - Artifical Intelligence/Robotics track?
+    - what is the CS - Artifical Intelligence/Robotics track?
+    - what is the Computer Science - AI/Robotics track?
+    - what is the CS - AI/Robotics track?
+    - what is the Computer Science Artifical Intelligence/Robotics track?
+    - what is the CS Artifical Intelligence/Robotics track?
+    - what is the Computer Science AI/Robotics track?
+    - what is the CS AI/Robotics track?
+    - AI/Robotics
+    - Artifical Intelligence/ Robotics
+    - what are the courses offered in the Computer Science - Artificial Intelligence/Robotics track?
+    - what are the courses offered in the CS - Artifical Intelligence/Robotics track?
+    - what are the courses offered in the Computer Science - AI/Robotics track?
+    - what are the courses offered in the CS - AI/Robotics tracks?
+    - what are the courses offered in the Computer Science Artificial Intelligence/Robotics track?
+    - what are the courses offered in the CS Artifical Intelligence/Robotics track?
+    - what are the courses offered in the Computer Science AI/Robotics track?
+    - what are the courses offered in the CS AI/Robotics tracks?
+    - courses offered in the Artificial Intelligence/Robotics track
+    - courses offered in the AI/Robotics
+    - courses Artificial Intelligence/Robotics track
+    - courses AI/Robotics track
+
+- intent: IT
+  examples: |
+    - what is the Computer Science - Information Technology (IT) track?
+    - what is the CS - Information Technology (IT) track?
+    - what is the Computer Science Information Technology (IT) track?
+    - what is the CS Information Technology (IT) track?
+    - Information Technology (IT)
+    - what are the courses offered in the Computer Science - Information Technology (IT) track?
+    - what are the courses offered in the CS - Information Technology (IT) track?
+    - what are the courses offered in the Computer Science Information Technology (IT) track?
+    - what are the courses offered in the CS Information Technology (IT) track?
+    - courses offered in the Information Technology (IT) track
+    - courses Information Technology (IT) track
+    - what is the Computer Science - Information Technology track?
+    - what is the CS - Information Technology track?
+    - what is the Computer Science Information Technology track?
+    - what is the CS Information Technology track?
+    - Information Technology
+    - what are the courses offered in the Computer Science - Information Technology track?
+    - what are the courses offered in the CS - Information Technology track?
+    - what are the courses offered in the Computer Science Information Technology track?
+    - what are the courses offered in the CS Information Technology track?
+    - courses offered in the Information Technology track
+    - courses Information Technology track
+
+- intent: Math
+  examples: |
+    - what is the Computer Science - Mathematics track?
+    - what is the CS - Mathematics track?
+    - what is the Computer Science Mathematics track?
+    - what is the CS Mathematics track?
+    - Mathematics
+    - what are the courses offered in the Computer Science - Mathematics track?
+    - Math
+    - what are the courses offered in the CS - Mathematics track?
+    - what are the courses offered in the Computer Science Mathematics track?
+    - what are the courses offered in the CS Mathematics track?
+    - courses offered in the Mathematics tracks
+    - courses Mathematics track
+
+- intent: Systems
+  examples: |
+    - what is the Computer Science - Systems track?
+    - what is the CS - Systems track?
+    - what is the Computer Science Systems track?
+    - what is the CS Systems track?
+    - Systems
+    - what are the courses offered in the Computer Science - Systems track?
+    - Systems track
+    - what are the courses offered in the CS - Systems track?
+    - what are the courses offered in the Computer Science Systems track?
+    - what are the courses offered in the CS Systems track?
+    - courses offered in the Systems track 
+    - courses Systems track
+
+- intent: Minoring
+  examples: |
+    - minoring 
+    - minor 
+    - what are the courses offered in the Computer Science - minor?
+    - what are the courses offered in the CS - minor?
+    - what are the courses offered in the Computer Science minor?
+    - what are the courses offered in the CS minor?
+    - courses offered in the minor
+    - courses minor

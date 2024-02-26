@@ -1,0 +1,48 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: Express Thanks
+  steps:
+  - intent: thanks 
+  - action: utter_thanks
+
+- story: Asking for chatbot options
+  steps:
+  - intent: options
+  - action: utter_options
+
+- story: Tracks at BVU
+  steps:
+  - intent: tracks 
+  - action: utter_tracks
+
+- story: CS AI/Robotics
+  steps:
+  - intent: AI/Robotics
+  - action: utter_AI/Robotics
+
+- story: CS Information Technology
+  steps:
+  - intent: IT 
+  - action: utter_IT
+
+- story: CS Mathematics
+  steps:
+  - intent: Math 
+  - action: utter_Math
+
+- story: CS Systems
+  steps:
+  - intent: Systems
+  - action: utter_Systems
+
+- story: CS Minor
+  steps:
+  - intent: Minoring
+  - action: utter_Minoring

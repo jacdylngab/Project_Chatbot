@@ -1,0 +1,37 @@
+body {
+  background-image: url("images/bvu3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1 {
+text-align: center;
+}
+
+.chat-bar-open {
+  text-align: center;
+  position: fixed;
+  bottom: 10px;
+  right: 650px;
+}
+
+.chat-bar-close {
+  display: none;
+  text-align: center;
+  position: fixed;
+  bottom: 10px;
+  right: 650px;
+}
+
+.chat-bar-open .close,
+.chat-bar-close .close {
+  background-color: #fff;
+  width: 70px;
+  cursor: pointer;
+  height: 70px;
+  padding: 0px;
+  border-radius: 50%;
+  border-style: none;
+  box-shadow: rgb(0 0 0 / 10%) 0px 1px 6px, rgb(0 0 0 / 20%) 0px 2px 24px;
+}

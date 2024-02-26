@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/styles.css" >
+  <title> BVU_CS ChatBot </title>
+  <link 
+      rel="Tab icon"
+      href="static/images/beaver.png"
+      type="image/png"
+    />
+  <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+
+  <script src="static/chatbot.js"></script>
+</head>
+<body>
+    <h1> Buena Vista University Computer Science ChatBot </h1>
+    <!--Popup chatbox windows-->
+
+    <!--Opening up the chat-->
+    <div class="chat-bar-open" id="chat-open">
+      <button 
+        id="chat-open-button"
+        type="button"
+        class="collapsible close"
+        onclick="chatOpen()"
+      >
+        <img src="static/images/bvu2.png" alt="Beaver image" />
+      </button>
+    </div>
+
+    <!--Closing the chatbot-->
+    <div class="chat-bar-close" id="chat-close">
+      <button 
+        id="chat-close-button"
+        type="button"
+        class="collapsible close"
+        onclick="chatClose()"
+      >
+        <i class="material-icons-outlined"> close </i>
+      </button>
+    </div>
+
+    <!--chat-window 1-->
+    <div class="chat-window" id="chat-window1">
+      <div class="Hello">
+        <p class="p1">Hello! How can I assist you today?</p>
+      </div>
+      <div class="start-conversation">
+        <h1>Start a conversation</h1>
+        <br />
+        <button 
+          class="new-conversation"
+          type="button"
+          onclick="openConversation()"
+        >
+          <span>New Conversation</span><i class="material-icons-outlined"> send </i>
+        </button>
+      </div>
+    </div>
+
+</body>
+</html>
+  
