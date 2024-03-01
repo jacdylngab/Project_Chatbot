@@ -9,6 +9,7 @@ h1 {
 text-align: center;
 }
 
+/* chat open and close */
 .chat-bar-open {
   text-align: center;
   position: fixed;
@@ -34,4 +35,120 @@ text-align: center;
   border-radius: 50%;
   border-style: none;
   box-shadow: rgb(0 0 0 / 10%) 0px 1px 6px, rgb(0 0 0 / 20%) 0px 2px 24px;
+}
+
+.chat-bar-close .close {
+  width:56px;
+  height: 56px;
+  padding: 12px;
+}
+
+.chat-bar-open .close img {
+  height: 70px;
+}
+
+.chat-bar-open .close i {
+  font-size: 30px;
+}
+
+/* chat window 1 */ 
+.chat-window {
+  width: 350px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 15px;
+  z-index: 9999999;
+  position: fixed;
+  bottom: 80px;
+  right: 480px;
+  display: none;
+  box-shadow: rgb(0 0 0 / 10%) 0px 1px 6px, rgb(0 0 0 / 20%) 0px 2px 24px;
+}
+
+.Hello {
+  background-color: #7f8ac5;
+  color: #fff;
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+
+.Hello .p1{
+  font-size: 20px;
+}
+
+.chat-window .start-conversation {
+  padding: 15px 24px;
+}
+
+.chat-window .start-conversation h1 {
+  font-size: 30px;
+}
+
+.chat-window .start-conversation button {
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 30px;
+  margin: 10px 0px;
+  background-color: #aeb6bf;
+  color: white;
+}
+
+.chat-window .start-conversation button span {
+  font-size: 14px;
+}
+
+.chat-window .start-conversation button i {
+  font-size: 16px;
+  position: relative;
+  left: 6px;
+  top: 3px;
+}
+
+/* chat window 2 */ 
+.chat-window2 {
+  display: none;
+  width: 1310px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 16px;
+  z-index: 9999999;
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 1px 6px, rgb(0 0 0 / 20%) 0px 2px 24px;
+}
+
+.chat-window2 .input-box {
+  position: absolute;
+  font-size: 15px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0px 30px;
+  padding-bottom: 18px;
+  border-top: 1px soild lightgray;
+}
+
+.chat-window2 .input-box .user-reply {
+  float: left;
+}
+
+.chat-window2 .input-box .user-reply input[type="text"] {
+  border: none;
+  outline: none;
+  width: 1200px;
+  font-size: 16px;
+}
+
+.chat-window2 .input-box .send-button {
+  float: right;
+  border: none;
+  outline: none;
+}
+
+.chat-window2 .input-box .send-button button {
+
 }
