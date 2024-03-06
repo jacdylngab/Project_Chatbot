@@ -65,6 +65,5 @@ function displayMessage(sender, text) {
 
 //Scroll to the bottom of the chat window
 $("#chat-window2").scrollTop($("#chat-window2")[0].scrollHeight);
-
 }
 
