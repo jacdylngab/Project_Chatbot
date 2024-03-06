@@ -41,21 +41,16 @@ responses:
   utter_AI/Robotics:
     - text: | 
          The AI/Robotics track is designed for students who wish to pursue careers that utilize artificial intelligence, machine learning, and/or robotic machinery. This track provides students with the theoretical basis for these topics as well as thorough exposure to building tangible predictive systems and adaptable robots.
-
          The Computer Science AI/Robotics track is comprised of six Computer Science core courses and other thirteen courses.
-
          **Computer** **Science** **Core:**
-
             1. CMSC 181 - Computer Science I: Introduction to Computer Science **3** **Credit(s)**
             2. CMSC 182 - Computer Science II: Data Structures **3** **Credit(s)**
             3. CMSC 205 - Discrete Structures **3** **Credit(s)**
             4. CMSC 280 - Computer Architecture **4** **Credit(s)**
             5. CMSC 285 - Algorithms **3** **Credit(s)**
             6. CMSC 291 - Computer Science Project **1** **Credt(s)**
-
          **Courses:**
          (Designed for careers in AI, machine learning, and/or robotics enginnering)
-
             1. CMSC 292 - Computer Science Career Exploration **1** **Credit(s)**
             2. CMSC 321 - Database Management Systems **3** **Credit(s)**
             3. CMSC 325 - Robotics **4** **Credit(s)**
@@ -69,27 +64,21 @@ responses:
             11. MATH 210 - Calculus I **4** **Credit(s)**
             12. MATH 211 - Calculus II **4** **Credit(s)**
             13. MATH 371 - Numerical Analysis **3** **Credit(s)**
-
          In total this is **54** **credit** **hours**
 
   utter_IT:
     - text: | 
          The Information Technology (IT) track focuses on serving the end-user by applying computer science to real-world applications across a number of common business domains. It is intended to prepare students for careers as software engineers, Web developers, network administrators, IT managers, analysts, and other IT-related jobs.
-
          The Computer Science Information Technology (IT) track is comprised of six Computer Science core courses and other fourteen courses.
-
          **Computer** **Science** **Core:**
-
             1. CMSC 181 - Computer Science I: Introduction to Computer Science **3** **Credit(s)**
             2. CMSC 182 - Computer Science II: Data Structures **3** **Credit(s)**
             3. CMSC 205 - Discrete Structures **3** **Credit(s)**
             4. CMSC 280 - Computer Architecture **4** **Credit(s)**
             5. CMSC 285 - Algorithms **3** **Credit(s)**
             6. CMSC 291 - Computer Science Project **1** **Credt(s)**
-
          **Courses:**
          (Designed for industry and for applications of computer science)
-
             1. CMSC 190 - Development and Operations **3** **Credit(s)**
             2. CMSC 292 - Computer Science Career Exploration **1** **Credit(s)**
             3. CMSC 321 - Database Management Systems **3** **Credit(s)**
@@ -103,27 +92,21 @@ responses:
             11. MATH 210 - Calculus I **4** **Credit(s)**
             13. MATH 371 - Numerical Analysis **3** **Credit(s)**
             14. At least one additional CMSC course at the 300 level or above, totaling at least three credit hours
-
          In total this is **52** **credit** **hours**
 
   utter_Math:
     - text: | 
          The Mathematics track provides students with increased preparation in mathematics. This track is most appealing to students who wish to attend graduate school, conduct computer science research, or work in a computer-related field requiring knowledge of upper-level mathematics.
-
          The Computer Science Mathematics track is comprised of six Computer Science core courses and other thirteen courses.
-
          **Computer** **Science** **Core:**
-
             1. CMSC 181 - Computer Science I: Introduction to Computer Science **3** **Credit(s)**
             2. CMSC 182 - Computer Science II: Data Structures **3** **Credit(s)**
             3. CMSC 205 - Discrete Structures **3** **Credit(s)**
             4. CMSC 280 - Computer Architecture **4** **Credit(s)**
             5. CMSC 285 - Algorithms **3** **Credit(s)**
             6. CMSC 291 - Computer Science Project **1** **Credt(s)**
-
          **Courses:**
          (Designed for graduate school preparation and scientific computing study)
-
             1. CMSC 292 - Computer Science Career Exploration **1** **Credit(s)**
             2. CMSC 321 - Database Management Systems **3** **Credit(s)**
             3. CMSC 331 - Web Application Development **3** **Credit(s)**
@@ -141,24 +124,19 @@ responses:
             13. one additional CMSC course at the 400-level or above
             14. MATH 322 - Linear Algebra **3** **Credit(s)**
             15. MATH 371 - Numerical Analysis **3** **Credit(s)**
-
          In total this is **53-54** **credit** **hours**
 
   utter_Systems:
     - text: | 
          The Systems track is a blend of the IT and Mathematics tracks. It provides students with more general computer science preparation. Students who are unsure of which track to choose are advised to elect the Systems track
-
          The Computer Science Systems track is comprised of six Computer Science core courses and other thirteen courses.
-
          **Computer** **Science** **Core:**
-
             1. CMSC 181 - Computer Science I: Introduction to Computer Science **3** **Credit(s)**
             2. CMSC 182 - Computer Science II: Data Structures **3** **Credit(s)**
             3. CMSC 205 - Discrete Structures **3** **Credit(s)**
             4. CMSC 280 - Computer Architecture **4** **Credit(s)**
             5. CMSC 285 - Algorithms **3** **Credit(s)**
             6. CMSC 291 - Computer Science Project **1** **Credt(s)**
-
          **Courses:**
          (Designed for general computer science preparation)
             1. CMSC 292 - Computer Science Career Exploration **1** **Credit(s)**
@@ -174,25 +152,20 @@ responses:
             11. MATH 210 - Calculus I **4** **Credit(s)**
             12. MATH 371 - Numerical Analysis **3** **Credit(s)**
             13. At least one additional CMSC course at the 300 level or above, totaling at least three credit hours
-
          In total this is **52** **credit** **hours**
 
   utter_Minoring:
     - text: | 
          The Computer Science minor is comprised of six Computer Science core courses and two additional different CMSC courses at the 300-level or above.
-
          **Computer** **Science** **Core:**
-
             1. CMSC 181 - Computer Science I: Introduction to Computer Science **3** **Credit(s)**
             2. CMSC 182 - Computer Science II: Data Structures **3** **Credit(s)**
             3. CMSC 205 - Discrete Structures **3** **Credit(s)**
             4. CMSC 280 - Computer Architecture **4** **Credit(s)**
             5. CMSC 285 - Algorithms **3** **Credit(s)**
             6. CMSC 291 - Computer Science Project **1** **Credt(s)**
-
          **Plus:**
          Two additional different CMSC courses at the 300-level or above, totaling at least six credit hours
-
          In total this is **23** **credit** **hours**
 
 session_config:
