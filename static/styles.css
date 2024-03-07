@@ -111,7 +111,7 @@ text-align: center;
   display: none;
   width: 1310px;
   height: 550px;
-  overflow-y: auto;
+  /*overflow-y: auto;*/
   border-radius: 10px;
   background-color: #fff;
   padding: 16px;
@@ -120,6 +120,13 @@ text-align: center;
   bottom: 70px;
   right: 20px;
   box-shadow: rgb(0 0 0 / 10%) 0px 1px 6px, rgb(0 0 0 / 20%) 0px 2px 24px;
+}
+
+.chat-box {
+  height: 520px; 
+  width: 100%;
+  padding-right: 5px; 
+  overflow: auto;
 }
 
 .chat-window2 .input-box {
