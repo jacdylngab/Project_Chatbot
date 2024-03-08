@@ -72,7 +72,9 @@ function displayMessage(sender, text) {
    // Splitting multiline text and appending each line 
     var lines = text.split('\n');
     for (var i = 0; i < lines.length; i++) {
-      $("#chat-box").append("<p>" + lines[i] + "</p>");
+      //Replacing text within double asterisks with bold HTML tags
+      var formattedLine = lines[i].replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
+      $("#chat-box").append("<p>" + formattedLine + "</p>");
   }
 
   //Scroll to the bottom of the chat window
