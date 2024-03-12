@@ -158,3 +158,23 @@ nlu:
     - what are the courses offered in the CS minor?
     - courses offered in the minor
     - courses minor
+
+- intent: Professor
+  examples: |
+      - Who are the Computer Science professors at Buena Vista University
+      - Who are the Computer Science professors at BVU
+      - Who are the CS professors at Buena Vista University
+      - Who are the CS professors at BVU
+      - Professor of Computer Science
+      - professors
+      - CS professors 
+      - teachers 
+
+- intent: BitPit
+  examples: |
+      - What are the BitPit hours where I can go get help from a CS fellow.
+      - What time can I go get help from a TA 
+      - BitPit hours 
+      - bitpit hours 
+      - hours for help
+      - when can I go for help 

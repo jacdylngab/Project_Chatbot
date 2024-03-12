@@ -11,6 +11,8 @@ intents:
   - Math
   - Systems
   - Minoring
+  - Professor
+  - BitPit
 
 responses:
   utter_greet:
@@ -167,6 +169,63 @@ responses:
          **Plus:**
          Two additional different CMSC courses at the 300-level or above, totaling at least six credit hours
          In total this is **23** **credit** **hours**
+
+  utter_Professor:
+    - text: |
+          The Computer Science professors at BVU are:
+            **1. Dr. Jason Shepherd.**
+            **2. Dr. Nathan Backman.**
+            **3. Dr. Shawn Stone.**
+          Basic Information about each CS professor: 
+            **Dr. Nathan Backman:**
+              **Email:** backman@bvu.edu 
+              **Phone:** (712) 749-2019 (office)
+              **Office:** Estelle Siebens Science Center 103
+              **Office Hours:** 
+                Office hours will be held from 10:00AM to 11:00AM on Mondays, Wednesdays, and Fridays as well as 9:00AM to 10:00AM on Tuesdays and Thursdays. Additional office hours outside of these set times are always welcome to be made by appointment.
+            **Dr. Jason Shepherd.**
+              **Office:** ESSC-104
+              **Phone:** 712-749-2281 (office), 712-291-1179 (mobile)
+              **Email:** shepherd@bvu.edu
+              **Professor availability:**
+                Instructor availability can be determined through Outlook. The instructor’s schedule and office hours can be found at https://jbshep.github.io/schedule/. Students seeking appointments beyond posted hours are strongly encouraged to send meeting appointments through Outlook.
+            **Dr. Shawn Stone:**
+
+  utter_bitpit:
+    - text: |
+           **Monday:**
+              10 AM - Tyler Crall
+              11 AM - Kaden B.
+              12 PM - Jamie
+              2 PM - Dylan
+              3 PM - Connor 
+            **Tuesday:** 
+              10 AM - Carson
+              11 AM - Hailey
+              1 PM - Keaton
+              2 PM - Jed
+              3 PM - Alayna
+              4 PM - Tyler Coffie
+              5 PM - Jacques
+            **Wednesday:**
+              11 AM - Kaden B.
+              12 PM - Carson
+              2 PM - Nathan
+              3 PM - Connor
+              4 PM - Lauren Rae
+            **Thursday:**
+              10 AM - Hailey
+              11 AM - Daniele
+              1:30 PM - Gunner
+              3 PM - Tyler Coffie
+              4 PM - Jacques
+              6 PM - Sieger
+            **Friday:**
+              10 AM - Tyler Crall
+              11 AM - Kaden S.
+              12 PM - Daniele
+              2 PM - Dylan
+              4 PM - Sota
 
 session_config:
   session_expiration_time: 60

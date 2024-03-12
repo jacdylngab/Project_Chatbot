@@ -46,3 +46,13 @@ stories:
   steps:
   - intent: Minoring
   - action: utter_Minoring
+
+- story: Professors Info 
+  steps:
+    - intent: Professor
+    - action: utter_Professor
+
+- story: BitPit help
+  steps: 
+      - intent: BitPit
+      - action: utter_bitpit
