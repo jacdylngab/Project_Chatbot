@@ -74,8 +74,13 @@ function displayMessage(sender, text) {
     for (var i = 0; i < lines.length; i++) {
       //Replacing text within double asterisks with bold HTML tags
       var formattedLine = lines[i].replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
+
+      // Detecting URLs and replacing them with clickable links
+      formattedLine = formattedLine.replace(/\[([^\]]+)\]\((https?:\/\/[^\s]+)\)/g, '<a href="$2" target="_blank">$1</a>');
+      
       $("#chat-box").append("<p>" + formattedLine + "</p>");
   }
+
 
   //Scroll to the bottom of the chat window
   var objDiv = document.getElementById("chat-box");

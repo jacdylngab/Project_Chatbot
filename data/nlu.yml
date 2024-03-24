@@ -178,3 +178,41 @@ nlu:
       - bitpit hours 
       - hours for help
       - when can I go for help 
+
+- intent: CS_DATA
+  examples: |
+      - What is the link to CS DATA
+      - What is the link to CS Data 
+      - CS Data
+      - I want to go to CS DATA 
+
+- intent: Stack_Overflow
+  examples: |
+      - What is the link to stack overflow 
+      - What is the website to go to Stack Stack Overflow
+      - I want to go on stack overflow
+      - Stack Overflow
+
+- intent: ChatGPT
+  examples: |
+      - Give me the link to ChatGPT
+      - What is the link to chatgpt 
+      - ChatGPT 
+      - chatgpt 
+      - Take me to chatgpt
+
+- intent: canvas
+  examples: |
+      - What is the link to canvas
+      - What is the link to Canvas 
+      - Canvas
+      - I want to go to canvas
+
+- intent: Beavernet
+  examples: |
+      - What is the link to Beavernet
+      - What is the link to beavernet 
+      - Beavernet
+      - I want to go to Beavernet
+      
+

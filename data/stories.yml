@@ -50,9 +50,34 @@ stories:
 - story: Professors Info 
   steps:
     - intent: Professor
-    - action: utter_Professor
+    - action: utter_ProfInfo
 
 - story: BitPit help
   steps: 
       - intent: BitPit
       - action: utter_bitpit
+
+- story: CS_Data website
+  steps: 
+      - intent: CS_DATA
+      - action: utter_CSData
+
+- story: Stack_Overflow website 
+  steps: 
+      - intent: Stack_Overflow
+      - action: utter_StackOverflow
+
+- story: ChatGPT help 
+  steps: 
+      - intent: ChatGPT
+      - action: utter_ChatGPT
+
+- story: take me to canvas website
+  steps: 
+      - intent: canvas
+      - action: utter_canvas
+
+- story:  take me to the Beavernet website
+  steps: 
+      - intent: Beavernet
+      - action: utter_Beavernet

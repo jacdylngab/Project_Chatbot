@@ -13,6 +13,11 @@ intents:
   - Minoring
   - Professor
   - BitPit
+  - CS_DATA
+  - Stack_Overflow
+  - ChatGPT
+  - canvas
+  - Beavernet
 
 responses:
   utter_greet:
@@ -32,7 +37,12 @@ responses:
          4. I can tell you who are the Computer Science professors at BVU.
          5. I can tell you about the office hours of each Computer Science professor.
          6. I can give you information about the Bit Pit hours where you can get help from a CS fellow.
-  
+         7. I can give the link to go to CS_Data 
+         8. I can give you the link to go to Stack Overflow
+         9. I can give you the link to go to ChatGPT
+         10. I can give you the link to go to Canvas
+         11. I can give you the link to go to Beavernet
+
   utter_tracks:
     - text: |
          1. Computer Science - Artificial Intelligence/Robotics Track.
@@ -170,13 +180,13 @@ responses:
          Two additional different CMSC courses at the 300-level or above, totaling at least six credit hours
          In total this is **23** **credit** **hours**
 
-  utter_Professor:
-    - text: |
-          The Computer Science professors at BVU are:
-            **1. Dr. Jason Shepherd.**
-            **2. Dr. Nathan Backman.**
-            **3. Dr. Shawn Stone.**
-          Basic Information about each CS professor: 
+  utter_ProfInfo:
+    - text: | 
+          **The Computer Science professors at BVU are:** 
+              [1. Dr. Jason Shepherd](https://www.bvu.edu/sites/default/files/styles/width_1000/public/2018-07/jason-shepherd-17.jpg?itok=DJr1Z7q6) 
+              [2. Dr. Nathan Backman](https://www.bvu.edu/sites/default/files/styles/width_1000/public/2018-07/nathan-backman-17.jpg?itok=7oaOq8cD) 
+              [3. Dr. Shawn Stone](https://www.bvu.edu/sites/default/files/styles/width_1000/public/2018-07/shawn-stone-17.jpg?itok=-0gyc4mL)
+          **Basic Information about each CS professor:** 
             **Dr. Nathan Backman:**
               **Email:** backman@bvu.edu 
               **Phone:** (712) 749-2019 (office)
@@ -226,6 +236,21 @@ responses:
               12 PM - Daniele
               2 PM - Dylan
               4 PM - Sota
+
+  utter_CSData:
+    - text: "The link to CS_Data is [CS Data](https://buenavistauniversity.sharepoint.com/sites/CS_Data)"
+
+  utter_StackOverflow:
+    - text: "The link to Stack Overflow is [Stack Overflow](https://stackoverflow.com)"
+
+  utter_ChatGPT:
+    - text: "The link to ChatGPT is [ChatGPT](https://chat.openai.com)"
+
+  utter_canvas:
+    - text: "The link to Canvas is [Canvas](https://bvu.instructure.com)"
+
+  utter_Beavernet:
+    - text: "The link to Beavernet is [Beavernet](https://beavernet.bvu.edu/ics/)"
 
 session_config:
   session_expiration_time: 60
