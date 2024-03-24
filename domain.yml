@@ -183,9 +183,9 @@ responses:
   utter_ProfInfo:
     - text: | 
           **The Computer Science professors at BVU are:** 
-              [1. Dr. Jason Shepherd](https://www.bvu.edu/sites/default/files/styles/width_1000/public/2018-07/jason-shepherd-17.jpg?itok=DJr1Z7q6) 
-              [2. Dr. Nathan Backman](https://www.bvu.edu/sites/default/files/styles/width_1000/public/2018-07/nathan-backman-17.jpg?itok=7oaOq8cD) 
-              [3. Dr. Shawn Stone](https://www.bvu.edu/sites/default/files/styles/width_1000/public/2018-07/shawn-stone-17.jpg?itok=-0gyc4mL)
+              [1. Dr. Jason Shepherd](https://www.bvu.edu/academics/faculty/jason-shepherd) 
+              [2. Dr. Nathan Backman](https://www.bvu.edu/academics/faculty/nathan-backman) 
+              [3. Dr. Shawn Stone](https://www.bvu.edu/academics/faculty/shawn-stone)
           **Basic Information about each CS professor:** 
             **Dr. Nathan Backman:**
               **Email:** backman@bvu.edu 
