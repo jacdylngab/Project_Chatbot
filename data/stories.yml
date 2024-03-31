@@ -81,3 +81,9 @@ stories:
   steps: 
       - intent: Beavernet
       - action: utter_Beavernet
+
+- story: out of scope inputs
+  steps: 
+      - intent: out_of_scope
+      - action: utter_out_of_scope
+
