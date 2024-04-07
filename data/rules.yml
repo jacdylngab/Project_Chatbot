@@ -7,7 +7,4 @@ rules:
   - intent: goodbye
   - action: utter_goodbye
 
-- rule: Input is unknown ask the user to try again
-  steps: 
-      - intent: nlu_fallback
-      - action: utter_please_rephrase
+
