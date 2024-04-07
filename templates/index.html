@@ -48,9 +48,9 @@
 
     <!--chat-window 1-->
     <div class="chat-window" id="chat-window1">
-      <div class="Hello">
+      <!--<div class="Hello">
         <p class="p1">Hello! How can I assist you today?</p>
-      </div>
+      </div> -->
       <div class="start-conversation">
         <h1>Start a conversation</h1>
         <br />
@@ -59,7 +59,7 @@
           type="button"
           onclick="openConversation()"
         >
-          <span>New Conversation</span><i class="material-icons-outlined"> send </i>
+          <span>Click here to open Conversation window </span>
         </button>
       </div>
     </div>
@@ -85,6 +85,17 @@
           >
             <i class="material-icons-outlined"> send </i>
           </button>
+
+        </div>
+        <div class="microphone-button">
+          <button
+            type="microphone"
+            class="bot-speak"
+            id="speak"
+            onclick="voiceResponse()"
+          >
+            <i class="material-icons-outlined"> mic </i>
+        </button>
         </div>
       </div>
     </div>

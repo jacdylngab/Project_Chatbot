@@ -1,3 +1,5 @@
+var TTS = false;
+
 function chatOpen() {
   document.getElementById("chat-open").style.display = "none";
   document.getElementById("chat-close").style.display = "block";
@@ -46,6 +48,41 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
+function voiceResponse(){
+  // Speech-To-Text
+
+  //Checking if the WebSpeech API is supported by your browser
+  if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {
+    //Creating SpeechRecognition instance
+    var recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+
+    //Starting recognition/voice recording of the user's input
+    recognition.start();
+
+    //Event handler for when speech is recognized
+    recognition.onresult = function(event) {
+      var transcript = event.results[0][0].transcript;
+      // Displaying user's spoken message into text
+      displayMessage("You", transcript);
+      // Sending the user's spoken message in form of text to Rasa server in order to receive the appropriate response
+      sendToRasa(transcript);
+
+      //Text-to-Speech    
+      TTS = true;
+    };
+
+    //Event handler for errors
+    recognition.onerror = function(event) {
+      console.error('There was an error in recognizing your voice:', event.error);
+    };
+  }
+  
+  else {
+    console.error('Speech recognition not supported');
+    return;
+  }
+  }
+
 function sendToRasa(message){
   //Creating a POST request to Rasa server using AJAX request
   $.ajax({
@@ -56,6 +93,19 @@ function sendToRasa(message){
     success: function (data) {
       // Displays the chatbot's response in the chat
       displayMessage("ChatBot", data[0].text);
+
+      if (TTS == true){
+        // Check if SpeechSynthesis is supported
+        if ('speechSynthesis' in window) {
+        var speech = new SpeechSynthesisUtterance(data[0].text);
+        window.speechSynthesis.speak(speech);
+        }
+        else {
+          console.error('Text-to-Speech not supported');
+          // Display response in chat if TTS is not supported
+          displayMessage("ChatBot", data[0].text);
+        }
+      }
     },
     error: function (error) {
       console.log("Error sending message to Rasa:", error);
