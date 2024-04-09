@@ -16,6 +16,8 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
+    - What's up
+    - yo
 
 - intent: goodbye
   examples: |
@@ -215,4 +217,42 @@ nlu:
       - Beavernet
       - I want to go to Beavernet
       
+- intent: out_of_scope
+  examples: |
+      - AI/Robotics Systems
+      - Systems AI/Robotics
+      - Systems AI 
+      - IT AI 
+      - Information Technology AI 
+      - AI IT 
+      - AI Information Technology 
+      - AI/Robotics IT 
+      - AI/Robotics Information Technology
+      - IT AI/Robotics
+      - Information Technology AI/Robotics
+      - Math IT 
+      - Math Information Technology 
+      - IT Math 
+      - Information Technology Math 
+      - Systems IT 
+      - Math AI/Robotics 
+      - AI/Robotics 
+      - AI/Robotics Systems track 
+      - Systems AI/Robotics track 
+      - Systems AI track 
+      - IT AI track 
+      - AI IT track 
+      - AI/Robotics IT track 
+      - IT AI/Robotics tracks 
+      - Math IT track 
+      - IT Math track 
+      - Systems IT track 
+      - Math AI/Robotics track  
+      - AI/Robotics track 
+      - Math Systems 
+      - Systems Math 
+      - Information Technology Math 
+      - Information Technology AI/Robotics 
+      - Information Technology Systems
+
 

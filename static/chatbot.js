@@ -67,7 +67,7 @@ function voiceResponse(){
       // Sending the user's spoken message in form of text to Rasa server in order to receive the appropriate response
       sendToRasa(transcript);
 
-      //Text-to-Speech    
+      //Text-to-Speech
       TTS = true;
     };
 

@@ -18,6 +18,7 @@ intents:
   - ChatGPT
   - canvas
   - Beavernet
+  - out_of_scope
 
 responses:
   utter_greet:
@@ -251,6 +252,12 @@ responses:
 
   utter_Beavernet:
     - text: "The link to Beavernet is [Beavernet](https://beavernet.bvu.edu/ics/)"
+
+  utter_out_of_scope: 
+    - text: "Sorry, I do not understand the question. Please try again!"
+
+  utter_please_rephrase:
+    - text: "Sorry, I do not understand the question. Please try again!"
 
 session_config:
   session_expiration_time: 60
