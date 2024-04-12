@@ -22,10 +22,10 @@ intents:
 
 responses:
   utter_greet:
-  - text: "Hello! I am your friendly BVU_CS ChatBot assistant. How can I help you today?"
+  - text: "Hello! I am your friendly BVU CS ChatBot assistant. How can I help you today?"
 
   utter_goodbye:
-  - text: "Goodbye!"
+  - text: "Goodbye! Go Beavers!"
   
   utter_thanks:
     - text: "You are welcome, it was a pleasure to help you."
@@ -33,7 +33,7 @@ responses:
   utter_options:
     - text: |
          1. I can tell you about the four Computer Science tracks offered at BVU.
-         2. I can tell you about about the Computer Science courses in each track.
+         2. I can tell you about the Computer Science courses in each track.
          3. I can give you information about minoring in Computer Science.
          4. I can tell you who are the Computer Science professors at BVU.
          5. I can tell you about the office hours of each Computer Science professor.
@@ -46,10 +46,11 @@ responses:
 
   utter_tracks:
     - text: |
-         1. Computer Science - Artificial Intelligence/Robotics Track.
-         2. Computer Science - Information Technology (IT) Track.
-         3. Computer Science - Mathematics Track.
-         4. Computer Science - Systems Track.
+         ** The Computer Science tracks offered at BVU are:**
+            1. Computer Science - Artificial Intelligence/Robotics Track.
+            2. Computer Science - Information Technology (IT) Track.
+            3. Computer Science - Mathematics Track.
+            4. Computer Science - Systems Track.
 
   utter_AI/Robotics:
     - text: | 

@@ -18,6 +18,27 @@ function openConversation() {
   document.getElementById("chat-window1").style.display = "none";
  }
 
+function handlingText(text) {
+
+    var lines = text.split('\n');
+    var formattedText = '';
+
+   // Splitting multiline text and appending each line 
+    for (var i = 0; i < lines.length; i++) {
+      //Replacing text within double asterisks with bold HTML tags
+      var formattedLine = lines[i].replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
+
+      // Detecting URLs and replacing them with clickable links
+      formattedLine = formattedLine.replace(/\[([^\]]+)\]\((https?:\/\/[^\s]+)\)/g, '<a href="$2" target="_blank">$1</a>');
+
+      formattedText += "<p>" + formattedLine + "</p>";
+
+  }
+
+  return formattedText;
+      
+}
+
 function userResponse() {
   //Getting user Input
   var userInput = $("#textInput").val();
@@ -80,10 +101,28 @@ function voiceResponse(){
   else {
     console.error('Speech recognition not supported');
     return;
+    }
+}
+
+function stopSpeaking() {
+
+  if ('speechSynthesis' in window) {
+    //Cancel any ongoing words being spoken outloud   
+    window.speechSynthesis.cancel();
+    TTS = false;
   }
-  }
+}
+
 
 function sendToRasa(message){
+
+  //Stop speech synthesis if TTS is true
+  //This for stopping words to be spoken when the user sends another message either by text or by voice
+
+  if (TTS){
+    stopSpeaking();
+  }
+
   //Creating a POST request to Rasa server using AJAX request
   $.ajax({
     url: "http://localhost:5005/webhooks/rest/webhook",
@@ -93,18 +132,19 @@ function sendToRasa(message){
     success: function (data) {
       // Displays the chatbot's response in the chat
       displayMessage("ChatBot", data[0].text);
-
       if (TTS == true){
-        // Check if SpeechSynthesis is supported
+
         if ('speechSynthesis' in window) {
-        var speech = new SpeechSynthesisUtterance(data[0].text);
-        window.speechSynthesis.speak(speech);
+        
+          word = handlingText(data[0].text); 
+          var speech = new SpeechSynthesisUtterance(word);
+          window.speechSynthesis.speak(speech);
         }
-        else {
-          console.error('Text-to-Speech not supported');
-          // Display response in chat if TTS is not supported
-          displayMessage("ChatBot", data[0].text);
-        }
+          else {
+            console.error('Text-to-Speech not supported');
+            // Display response in chat if TTS is not supported
+            displayMessage("ChatBot", data[0].text);
+          }
       }
     },
     error: function (error) {
@@ -118,22 +158,10 @@ function sendToRasa(message){
 function displayMessage(sender, text) {
    // Appending a new paragraph with the sender and text to the chat-messages container
     $("#chat-box").append("<p><strong>" + sender + ":</strong></p>");
+    $("#chat-box").append(handlingText(text));
 
-   // Splitting multiline text and appending each line 
-    var lines = text.split('\n');
-    for (var i = 0; i < lines.length; i++) {
-      //Replacing text within double asterisks with bold HTML tags
-      var formattedLine = lines[i].replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
-
-      // Detecting URLs and replacing them with clickable links
-      formattedLine = formattedLine.replace(/\[([^\]]+)\]\((https?:\/\/[^\s]+)\)/g, '<a href="$2" target="_blank">$1</a>');
-      
-      $("#chat-box").append("<p>" + formattedLine + "</p>");
-  }
-
-
-  //Scroll to the bottom of the chat window
-  var objDiv = document.getElementById("chat-box");
-  objDiv.scrollTop = objDiv.scrollHeight;
+    //Scroll to the bottom of the chat window
+    var objDiv = document.getElementById("chat-box");
+    objDiv.scrollTop = objDiv.scrollHeight;
 }
 
